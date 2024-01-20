@@ -18,7 +18,16 @@ The goal of this project is to develop an AI/ML-driven Fashion Recommendation Sy
 
 ### **Semantics-based Product Search**
 
-The first methodology applied for this project focuses on implementing a semantics-based product search system to improve the accuracy and relevance of search results. Through data preprocessing, semantic embeddings for each product stored in the DB and the embeddings for user queries are generated using advanced NLP techniques. These embeddings capture the meaning and context of user queries and product descriptions. By applying semantic matching algorithms and developing a relevance ranking mechanism, the search results are refined based on the similarity scores and other relevant factors (e.g., color and price).
+The first methodology applied for this project focuses on implementing a semantics-based product search system to improve the accuracy and relevance of search results. Through data preprocessing, semantic embeddings for each product description stored in the DB are generated using advanced NLP techniques. These embeddings capture the meaning and context of product descriptions. 
+
+To perform a product search, a user query or a reference product description is also converted into a vector representation using the same text embedding technique. This query vector is then compared with all of product description vectors stored in the vector store. By measuring the similarity between vectors, typically L2 distance, the most similar product vectors are identified.
+
+Compared to traditional tag or keyword matching methods, semantics-based product search offers several benefits:
+* Deeper understanding of the product description compared to simple keyword matching.
+* Flexibility in handling various languages, synonyms, and related terms, allowing for more flexible and comprehensive search capabilities.
+* Optimized algorithms for high-performance retrieval, making the search process faster.
+* More accurate and relevant search results lead to increased satisfaction and engagement.
+
 
 For example:
 
