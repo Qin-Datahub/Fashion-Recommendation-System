@@ -59,3 +59,4 @@ Name: 886, dtype: object
 
 <img src="https://slimages.macysassets.com/is/image/MCY/products/3/optimized/25527343_fpx.tif?$browse$&wid=1200&fmt=jpeg" alt="Image 1" width="32%"/> <img src="https://slimages.macysassets.com/is/image/MCY/products/4/optimized/24882424_fpx.tif?$browse$&wid=1200&fmt=jpeg" alt="Image 2" width="32%"/> <img src="https://slimages.macysassets.com/is/image/MCY/products/4/optimized/23388484_fpx.tif?$browse$&wid=1200&fmt=jpeg" alt="Image 3" width="32%"/>
 
+The pretrained model used for generating embeddings in this example is `bert-base-nli-mean-tokens`. For more detailed information on this model or to explore other pretrained models, you can refer to the [SentenceTransformers](https://www.sbert.net/) documentation.
