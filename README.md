@@ -73,3 +73,75 @@ Name: 886, dtype: object
 <img src="https://slimages.macysassets.com/is/image/MCY/products/3/optimized/25527343_fpx.tif?$browse$&wid=1200&fmt=jpeg" alt="Image 1" width="32%"/> <img src="https://slimages.macysassets.com/is/image/MCY/products/4/optimized/24882424_fpx.tif?$browse$&wid=1200&fmt=jpeg" alt="Image 2" width="32%"/> <img src="https://slimages.macysassets.com/is/image/MCY/products/4/optimized/23388484_fpx.tif?$browse$&wid=1200&fmt=jpeg" alt="Image 3" width="32%"/>
 
 The pretrained model used for generating embeddings in this example is `bert-base-nli-mean-tokens`. For more detailed information on this model or to explore other pretrained models, you can refer to the [SentenceTransformers](https://www.sbert.net/) documentation.
+
+### **Semantics + Color-based Product Search**
+
+In addition to the semantics-based product search methodology discussed in the previous section, incorporating color information can further enhance the accuracy and relevance of search results. By considering the dominant color of a product image, we can provide more visually similar product recommendations to users.
+
+#### **Extracting Dominant Color**
+
+To extract the dominant color from an image, we leverage the [colorthief](https://pypi.org/project/colorthief/) library. However, it's important to note that the result returned by colorthief may not always be stable, especially when the object in the image occupies a small area, and the background color is mistakenly identified as the dominant color. To address this issue, we introduce a secondary color as an alternative whenever the identified dominant color is very close to the background color.
+
+Example usage:
+```
+from color_extractor import ColorExtractor
+ColorExtractor("jeans/f59aa940-4138-495f-b269-749c48980605.jpeg").get_dominant_color()
+
+#Output:
+(53, 83, 123)
+```
+
+#### **Calculating Color Difference with CIELAB**
+
+When searching for the most similar colors given a reference color, we utilize the delta formula defined by [CIELAB](https://en.wikipedia.org/wiki/CIELAB_color_space#:~:text=The%20CIELAB%20color%20space%2C%20also,%2C%20green%2C%20blue%20and%20yellow.) (`delta_E_CIE1994`) to calculate the color difference. This formula takes into account the perceptual differences between colors and provides a more reliable measure compared to simple Euclidean distance. Python library [colormath](https://github.com/gtaylor/python-colormath.git) provides guidelines over the usage of various difference calculation formulas.
+
+Example usage:
+```
+$ git clone https://github.com/gtaylor/python-colormath.git
+$ cd python-colormath
+```
+
+```
+# Similar color search
+from colormath.color_diff import delta_e_cie1994
+from colormath.color_objects import LabColor, sRGBColor
+from colormath.color_conversions import convert_color
+
+def color_similarity(reference_color, sample_color):
+    """
+    Return the similarity score between two RGB colors.
+    """
+    # Convert RGB colors to Lab colors
+    color1_lab = convert_color(sRGBColor(*reference_color), LabColor)
+    color2_lab = convert_color(sRGBColor(*sample_color), LabColor)
+    
+    return delta_e_cie1994(color1_lab, color2_lab)
+```
+
+#### **Implement Color-based Search Only**
+
+```
+from product_search import ProductSearcher
+
+# Search for 3 products where the colors are similar to (36, 45, 70)
+ProductSearcher("jeans.csv").color_based_searcher(reference_color=(36,45,70), k=3)
+```
+Query color:
+
+![image](rgb.png)
+
+Example output:
+```
+Similarity score: 0.0
+https://slimages.macysassets.com/is/image/MCY/products/0/optimized/26498420_fpx.tif?$browse$&wid=1200&fmt=jpeg
+============================================================
+Similarity score: 7.199332819041628
+https://slimages.macysassets.com/is/image/MCY/products/8/optimized/23643478_fpx.tif?$browse$&wid=1200&fmt=jpeg
+============================================================
+Similarity score: 8.406546727039906
+https://slimages.macysassets.com/is/image/MCY/products/5/optimized/22462345_fpx.tif?$browse$&wid=1200&fmt=jpeg
+======================================
+```
+<img src="https://slimages.macysassets.com/is/image/MCY/products/0/optimized/26498420_fpx.tif?$browse$&wid=1200&fmt=jpeg" alt="Image 1" width="32%"/> <img src="https://slimages.macysassets.com/is/image/MCY/products/8/optimized/23643478_fpx.tif?$browse$&wid=1200&fmt=jpeg" alt="Image 2" width="32%"/> <img src="https://slimages.macysassets.com/is/image/MCY/products/5/optimized/22462345_fpx.tif?$browse$&wid=1200&fmt=jpeg" alt="Image 3" width="32%"/>
+
+
