@@ -1,5 +1,7 @@
 # **AI/ML-driven Fashion Recommendation System**
 
+![image](cover.png)
+
 ## **Objective**
 
 The goal of this project is to develop an AI/ML-driven Fashion Recommendation System that revolutionizes the online shopping experiences by providing personalized styling guidance and improving the accuracy of product search systems used by major e-commerce stores like Macy's or Nordstorm. The project aims to accomplish the following objectives:
