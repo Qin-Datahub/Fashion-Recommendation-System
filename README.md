@@ -1,5 +1,8 @@
 ![image](cover.png)
 
+Photo by <a href="https://unsplash.com/@charlotablunarova?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Charlota Blunarova</a> on <a href="https://unsplash.com/photos/woman-painting-r5xHI_H44aM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+
 # **AI/ML-driven Fashion Recommendation System**
 ## **Objective**
 
