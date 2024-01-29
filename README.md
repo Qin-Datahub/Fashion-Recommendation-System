@@ -74,7 +74,7 @@ Name: 886, dtype: object
 
 The pretrained model used for generating embeddings in this example is `bert-base-nli-mean-tokens`. For more detailed information on this model or to explore other pretrained models, you can refer to the [SentenceTransformers](https://www.sbert.net/) documentation.
 
-### **Semantics + Color-based Product Search**
+### **Color-based Product Search**
 
 In addition to the semantics-based product search methodology discussed in the previous section, incorporating color information can further enhance the accuracy and relevance of search results. By considering the dominant color of a product image, we can provide more visually similar product recommendations to users.
 
