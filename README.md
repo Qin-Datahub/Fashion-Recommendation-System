@@ -155,3 +155,8 @@ When building an algorithm to help people find outfits in harmony, color theory 
 * **Color psychology**: different colors evoke different emotions and moods. The algorithm can take this into account and suggest colors that align with a user's desired mood of the occasion they are dressing for. For example, it might suggest calming and soothing colors for relaxed outfit or vibrant and energetic colors for a lively event.
 * **Seasonal palettes**: fashion trends often revolve around seasonal color palettes. The algorithm can analyze current fashion trends and suggest outfits based on the colors that are popular for a particular season. This helps users stay up-to-date with the latest fashion trends and ensures that their outfits are in harmony with the current season.
 * **Personalized recommendations**: the algorithm can take into account an individual's skin tone, hair color, and eye color when suggesting color combinations. Certain colors may complement a person's features more effectively, and the algorithm can provide personalized recommendations based on these factors.
+
+Example 1: Pairing the sweater below with a pair of jeans with complementary colors.
+
+
+
