@@ -158,5 +158,7 @@ When building an algorithm to help people find outfits in harmony, color theory 
 
 Example 1: Pairing the sweater below with a pair of jeans with complementary colors.
 
+<img src="https://slimages.macysassets.com/is/image/MCY/products/4/optimized/24747514_fpx.tif?$browse$&wid=1200&fmt=jpeg" width="32%"/>
+
 
 
