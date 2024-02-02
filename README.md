@@ -160,7 +160,8 @@ Example 1: Pairing the sweater below with a pair of jeans with complementary col
 
 <img src="https://slimages.macysassets.com/is/image/MCY/products/4/optimized/24747514_fpx.tif?$browse$&wid=1200&fmt=jpeg" width="32%"/>
 
-Candidates with different saturation and lightness:
+Recommended items with different saturation and lightness:
 
 <img src="https://slimages.macysassets.com/is/image/MCY/products/8/optimized/26059308_fpx.tif?$browse$&wid=1200&fmt=jpeg" width="32%"/>
-
+<img src="https://slimages.macysassets.com/is/image/MCY/products/1/optimized/26384931_fpx.tif?$browse$&wid=1200&fmt=jpeg" width="32%"/>
+<img src="https://slimages.macysassets.com/is/image/MCY/products/2/optimized/26645392_fpx.tif?$browse$&wid=1200&fmt=jpeg" width="32%"/>
