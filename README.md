@@ -1,4 +1,4 @@
-![image](cover.png)
+![image](images/cover.png)
 
 Photo by <a href="https://unsplash.com/@charlotablunarova?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Charlota Blunarova</a> on <a href="https://unsplash.com/photos/woman-painting-r5xHI_H44aM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
@@ -128,7 +128,7 @@ ProductSearcher("jeans.csv").color_based_searcher(reference_color=(36,45,70), k=
 ```
 Query color:
 
-![image](rgb.png)
+![image](images/rgb.png)
 
 Example output:
 ```
