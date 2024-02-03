@@ -168,7 +168,7 @@ Recommended items with different saturation and lightness:
 
 <img src="https://slimages.macysassets.com/is/image/MCY/products/4/optimized/26456834_fpx.tif?$browse$&wid=1200&fmt=jpeg" width="32%"/>
 
-**Example 3**: Pairing the sweater above with a pair of jeans with analogous colors
+**Example 3**: Pairing the sweater above with a pair of jeans with [analogous colors](https://en.wikipedia.org/wiki/Analogous_colors#:~:text=In%20color%20theory%2C%20analogous%20colors,corresponding%20to%20something%20in%20particular.)
 
 <img src="https://slimages.macysassets.com/is/image/MCY/products/4/optimized/26456834_fpx.tif?$browse$&wid=1200&fmt=jpeg" width="32%"/> <img src="https://slimages.macysassets.com/is/image/MCY/products/8/optimized/24393878_fpx.tif?$browse$&wid=1200&fmt=jpeg" width="32%"/><img src="https://slimages.macysassets.com/is/image/MCY/products/8/optimized/26329828_fpx.tif?$browse$&wid=1200&fmt=jpeg" width="32%"/>
 
