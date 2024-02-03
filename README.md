@@ -167,3 +167,8 @@ Recommended items with different saturation and lightness:
 **Example 2**: Pairing the sweater above with a pair of jeans with monochromatic colors
 
 <img src="https://slimages.macysassets.com/is/image/MCY/products/4/optimized/26456834_fpx.tif?$browse$&wid=1200&fmt=jpeg" width="32%"/>
+
+**Example 3**: Pairing the sweater above with a pair of jeans with analogous colors
+
+<img src="https://slimages.macysassets.com/is/image/MCY/products/4/optimized/26456834_fpx.tif?$browse$&wid=1200&fmt=jpeg" width="32%"/> <img src="https://slimages.macysassets.com/is/image/MCY/products/8/optimized/24393878_fpx.tif?$browse$&wid=1200&fmt=jpeg" width="32%"/><img src="https://slimages.macysassets.com/is/image/MCY/products/8/optimized/26329828_fpx.tif?$browse$&wid=1200&fmt=jpeg" width="32%"/>
+
